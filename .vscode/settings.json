@@ -1,5 +1,7 @@
 {
     "cSpell.words": [
-        "bookdb"
+        "bookdb",
+        "nestjs",
+        "typeorm"
     ]
 }

@@ -14,11 +14,14 @@ export class BookService {
       author,
       category,
     );
-    console.log(result);
     return result;
   }
 
   async getBooks() {
     return await this.bookRepository.find();
+  }
+
+  async getBookById(id: number) {
+    return await this.bookRepository.findOne(id);
   }
 }
