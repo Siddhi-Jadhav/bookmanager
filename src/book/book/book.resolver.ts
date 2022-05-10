@@ -19,4 +19,9 @@ export class BookResolver {
   ) {
     return await this.bookService.createBook(title, author, category);
   }
+
+  @Query((returns) => BookType)
+  async getBook(@Args('id') id: number) {
+    return await this.bookService.getBookById(id);
+  }
 }
